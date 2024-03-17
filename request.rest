@@ -1,0 +1,86 @@
+### home page
+GET http://localhost:3000
+
+
+### api home page
+GET http://localhost:3000/api/v1
+
+#############################################
+
+
+### get all posts
+GET http://localhost:3000/api/v1/post
+
+### get a post
+GET http://localhost:3000/api/v1/post/65d9ef6ae2ccc02ebf2cb540
+
+### make a post1
+POST http://localhost:3000/api/v1/post
+Content-Type: application/json
+
+{
+  "title" : "My 44 post",
+  "body" : "This is my 44 post. I am so excited!"
+}
+
+### make a post2
+POST http://localhost:3000/api/v1/post
+Content-Type: application/json
+
+{
+  "title" : "My second post",
+  "body" : "This is my second post. Are you too?"
+}
+
+### update a post
+PATCH http://localhost:3000/api/v1/post/65f44a771e02a656802b5bda
+Content-Type: application/json
+
+{
+  "title" : "My 33 post to be deleted",
+  "body" : "This is my second post. I think you too."
+}
+
+### delete a post
+DELETE http://localhost:3000/api/v1/post/65f332bb8f02cfbad458f0c5
+
+
+#############################################
+
+
+### get all users
+GET http://localhost:3000/api/v1/auth
+
+### signup1
+POST http://localhost:3000/api/v1/auth/signup
+Content-Type: application/json
+
+{
+  "username": "",
+  "password": "mypassword"
+}
+
+### signup2
+POST http://localhost:3000/api/v1/auth/signup
+Content-Type: application/json
+
+{
+  "username": "Thomas",
+  "password": "1234abcd"
+}
+
+### login
+POST http://localhost:3000/api/v1/auth/login
+Content-Type: application/json
+
+{
+  "username": "Johnson",
+  "password": "mypassword"
+}
+
+### logout
+GET http://localhost:3000/api/v1/auth/logout
+
+
+### whoami
+GET http://localhost:3000/api/v1/auth/whoami
