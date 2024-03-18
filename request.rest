@@ -1,21 +1,21 @@
 ### home page
-GET http://localhost:3000
+GET http://10.0.2.27:3000
 
 
 ### api home page
-GET http://localhost:3000/api/v1
+GET http://10.0.2.27:3000/api/v1
 
 #############################################
 
 
 ### get all posts
-GET http://localhost:3000/api/v1/post
+GET http://10.0.2.27:3000/api/v1/post
 
 ### get a post
-GET http://localhost:3000/api/v1/post/65d9ef6ae2ccc02ebf2cb540
+GET http://10.0.2.27:3000/api/v1/post/65d9ef6ae2ccc02ebf2cb540
 
 ### make a post1
-POST http://localhost:3000/api/v1/post
+POST http://10.0.2.27:3000/api/v1/post
 Content-Type: application/json
 
 {
@@ -24,7 +24,7 @@ Content-Type: application/json
 }
 
 ### make a post2
-POST http://localhost:3000/api/v1/post
+POST http://10.0.2.27:3000/api/v1/post
 Content-Type: application/json
 
 {
@@ -33,7 +33,7 @@ Content-Type: application/json
 }
 
 ### update a post
-PATCH http://localhost:3000/api/v1/post/65f44a771e02a656802b5bda
+PATCH http://10.0.2.27:3000/api/v1/post/65f44a771e02a656802b5bda
 Content-Type: application/json
 
 {
@@ -49,19 +49,19 @@ DELETE http://localhost:3000/api/v1/post/65f332bb8f02cfbad458f0c5
 
 
 ### get all users
-GET http://localhost:3000/api/v1/auth
+GET http://10.0.2.27:3000/api/v1/auth
 
 ### signup1
-POST http://localhost:3000/api/v1/auth/signup
+POST http://10.0.2.27:3000/api/v1/auth/signup
 Content-Type: application/json
 
 {
-  "username": "",
+  "username": "Johnson",
   "password": "mypassword"
 }
 
 ### signup2
-POST http://localhost:3000/api/v1/auth/signup
+POST http://10.0.2.27:3000/api/v1/auth/signup
 Content-Type: application/json
 
 {
@@ -70,7 +70,7 @@ Content-Type: application/json
 }
 
 ### login
-POST http://localhost:3000/api/v1/auth/login
+POST http://10.0.2.27:3000/api/v1/auth/login
 Content-Type: application/json
 
 {
@@ -79,8 +79,8 @@ Content-Type: application/json
 }
 
 ### logout
-GET http://localhost:3000/api/v1/auth/logout
+GET http://10.0.2.27:3000/api/v1/auth/logout
 
 
 ### whoami
-GET http://localhost:3000/api/v1/auth/whoami
+GET http://10.0.2.27:3000/api/v1/auth/whoami
