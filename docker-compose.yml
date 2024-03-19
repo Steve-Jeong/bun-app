@@ -12,9 +12,9 @@ services:
   node-app:
     build: 
       context: .
-      image: jst0930/bun-devops
       args: 
         NODE_ENV: $NODE_ENV
+    image: jst0930/bun-devops
     tty: true
     depends_on:
       - mongo
