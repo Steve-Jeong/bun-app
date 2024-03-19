@@ -27,11 +27,11 @@ app.get("/", (req, res) => {
 });
 app.get("/api/v1", (req, res) => {
   console.log(chalk.inverse.cyan(`${os.hostname()} : Hello world`));
-  res.send(`${os.hostname()} : Hello Hello world`);
+  res.send(`${os.hostname()} : Hello world`);
 });
 app.get("/api/v1/hello", (req, res) => {
   console.log(chalk.inverse.cyan(`${os.hostname()} : Hello world`));
-  res.send(`${os.hostname()} : Hello Hello world`);
+  res.send(`${os.hostname()} : Hello world`);
 });
 
 app.use("/api/v1/post", postRouter);
